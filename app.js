@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
   console.log('---');
   res.json({ message: "Welcome to our application." });
 });
-app.post("/", (req, res) => {
+app.post("/dev", (req, res) => {
     console.log('post check');
     res.json({ message: "win 상윤" });
   });
