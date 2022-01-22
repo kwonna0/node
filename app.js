@@ -17,8 +17,17 @@ app.post("/", (req, res) => {
   console.log('---');
   res.json({ message: "Welcome to our application." });
 });
+app.get("/", (req, res) => {
+    console.log('---');
+    res.json({ message: "Welcome to our application." });
+  });
 app.get("/test", (req, res) => {
     console.log('post check');
     res.json({ message: "win 상윤" });
   });
+
+app.post("/image/get", async (req, res) => {
+	const url = "https://www.ringleplus.com";
+	res.json(url);
+});
 
