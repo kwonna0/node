@@ -13,7 +13,7 @@ app.use('/static', express.static('public'));
 
 app.listen(port, () => console.log(`Server up and running on port ${port}.`));
 
-app.get("/", (req, res) => {
+app.post("/", (req, res) => {
   console.log('---');
   res.json({ message: "Welcome to our application." });
 });
