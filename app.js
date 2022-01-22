@@ -26,7 +26,7 @@ app.get("/test", (req, res) => {
     res.json({ message: "win 상윤" });
   });
 
-app.post("/image/get", async (req, res) => {
+app.get("/image/get", async (req, res) => {
 	const url = "https://www.ringleplus.com";
 	res.json(url);
 });
